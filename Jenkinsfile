@@ -14,7 +14,15 @@ pipeline {
         stage ('Build'){
             steps{
 
-                echo 'Deploy-StagingArea-Piple'
+                echo 'Deploy-Staging Area-Piple'
+
+            }
+        }
+		
+		   stage ('Deploy'){
+            steps{
+
+                echo 'Deploy- war -Piple'
 
             }
         }

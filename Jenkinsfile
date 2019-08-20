@@ -3,29 +3,20 @@ pipeline {
     stages {
         stage ('Initialize') {
             steps {
-                /*For windows machine */
-               echo  'mvn clean package'
-
-                /*For Mac & Linux machine */
-               // sh  'mvn clean package'
+                echo  "Initializing the Code File"
             }
         }
 
-        stage ('Build'){
-            steps{
-
-                echo 'Deploy-Staging Area-Piple'
-
-            }
-        }
-		
-		   stage ('Deploy'){
-            steps{
-
-                echo 'Deploy- war -Piple'
-
+        stage ('Build') {
+            steps {
+                echo 'Hello World'
             }
         }
 
+         stage ('Deploy') {
+            steps {
+                echo 'Deployed an Artifact'
+            }
+        }
     }
 }

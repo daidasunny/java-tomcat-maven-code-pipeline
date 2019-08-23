@@ -18,7 +18,7 @@ pipeline {
         stage ('Deploy Build in Staging Area'){
             steps{
 
-                build job : 'Tomcat in stg env-code pipleline'
+                build job : 'stg-env-code-pipleline'
 
             }
         }

@@ -18,7 +18,7 @@ pipeline {
         stage ('Deploy Build in Staging Area'){
             steps{
 
-                build job :'stg-env-code-pipeline', propagate:false
+                build job :'stg-env-code-pipeline'
 
             }
         }

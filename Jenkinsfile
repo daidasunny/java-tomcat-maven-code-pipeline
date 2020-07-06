@@ -5,7 +5,7 @@ pipeline {
             steps {
                sh  'mvn clean install'
                sh 'mvn package'
-                sh 'java -jar target/dependency/webapp-runner.jar target/*.war'
+                sh 'java -jar target/dependency/webapp-runner.jar --expand-war target/*.war'
             }
             }
         }
